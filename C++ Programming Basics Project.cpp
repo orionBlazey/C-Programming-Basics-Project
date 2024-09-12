@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -13,5 +14,5 @@ int main()
     Ccustomer = Ecustomer * 0.58;
 
     cout << "The approximate number of customers purchasing one or more energy drinks is " << Ecustomer << " people.\n";
-    cout << "The approximate amount of customers preferring citrus-flavored drinks is " << Ccustomer << " people.\n";
+    cout << "The approximate amount of customers preferring citrus-flavored drinks is " << round(Ccustomer) << " people.\n";
 }
