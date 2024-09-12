@@ -1,4 +1,4 @@
-// C++ Programming Basics Project.cpp : This is the "Distance per Tank of Gas" branch
+// C++ Programming Basics Project.cpp : This is the "Energy Drink Consumption" branch
 //
 
 #include <iostream>
@@ -6,14 +6,12 @@ using namespace std;
 
 int main()
 {
-    double Tdistance, Hdistance, gallonsAmount, AMG1, AMG2;
+    double totalCustomers, Ecustomer, Ccustomer;
 
-    gallonsAmount = 20;
-    AMG1 = 23.5;
-    AMG2 = 28.9;
-    Tdistance = gallonsAmount * AMG1;
-    Hdistance = gallonsAmount * AMG2;
+    totalCustomers = 16500;
+    Ecustomer = totalCustomers * 0.15;
+    Ccustomer = Ecustomer * 0.58;
 
-    cout << "On one tank of gas, the car can travel " << Tdistance << "miles in town and " << Hdistance << "miles on the highway\n";
-    
+    cout << "The approximate number of customers purchasing one or more energy drinks is " << Ecustomer << "\n";
+    cout << "The approximate amount of customers preferring citrus-flavored drinks is " << Ccustomer << "\n";
 }
